@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                = "GMA-Meta-Mediation"
-  spec.version             = "6.12.0.1"
+  spec.version             = "6.12.0.2"
   spec.author              = 'Freestar'
   spec.license             =  { :type => 'Apache2.0', :text => 'LICENSE' }
   spec.homepage            = 'http://www.freestar.com'
@@ -9,13 +9,13 @@ Pod::Spec.new do |spec|
   spec.swift_version       = '5.0'
   spec.requires_arc        = true
 
-  spec.vendored_frameworks  = 'MetaAdapter-6.12.0.0/MetaAdapter.xcframework'
+  spec.vendored_frameworks  = 'MetaAdapter-6.12.0.2/MetaAdapter.xcframework'
   spec.dependency 'FBAudienceNetwork', '6.12.0'
-  spec.dependency 'Google-Mobile-Ads-SDK', '10.0'
+  spec.dependency 'Google-Mobile-Ads-SDK', '~> 10.4'
 
-  spec.preserve_paths = 'MetaAdapter-6.12.0.0/README.md'
+  spec.preserve_paths = 'MetaAdapter-6.12.0.2/README.md'
   spec.source              = {
-      :http => "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.12.0.0.zip"
+      :http => "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.12.0.2.zip"
   }
 
   spec.pod_target_xcconfig = {
